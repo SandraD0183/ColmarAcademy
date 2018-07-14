@@ -1,0 +1,52 @@
+html {
+  font-size: 16px;
+}
+
+head {
+  display: none;
+}
+
+link {
+  dislpay: none;
+}
+
+title {
+  display: none;
+}
+
+body {
+  font-family: 'Tinos', serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  border-bottom: 2px solid #4c9ed9;
+}
+
+header .container {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
