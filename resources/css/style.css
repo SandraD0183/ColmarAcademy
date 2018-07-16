@@ -50,3 +50,74 @@ nav {
   width: 100%;
   margin: auto;
 }
+
+nav li {
+  display: inline-flex;
+  margin: 0rem 1rem;
+  padding-right: 1.5 rem;
+}
+
+a {
+  text-decoration: none;
+  padding: .5rem;
+  text-align: left;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+#name1 {
+  font-weight: 700;
+  color: #1d4f73;
+}
+
+#name2 {
+  font-weight: 500;
+  color: #000000;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.nav-content li {
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #a9bacb;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner img {
+  margin: 2rem;
+  padding-top: 4rem;
+  width: 60%;
+}
+
+.main.container {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  padding: 2rem 0rem;
+  background-color: #fff;
+}
+
+
+
+
+@media only screen and (min-width: 1024px) {
+  header .mobile {
+    display: none;
+  }
+}
