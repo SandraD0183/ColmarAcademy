@@ -1,22 +1,6 @@
 html {
   font-size: 16px;
-}
-
-head {
-  display: none;
-}
-
-link {
-  dislpay: none;
-}
-
-title {
-  display: none;
-}
-
-body {
   font-family: 'Tinos', serif;
-  font-size: 16px;
 }
 
 header {
@@ -31,7 +15,7 @@ header {
 
 header .container {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   background-color: #fff;
 }
@@ -54,13 +38,14 @@ nav {
 nav li {
   display: inline-flex;
   margin: 0rem 1rem;
-  padding-right: 1.5 rem;
+  padding-right: 1.5rem;
 }
 
 a {
   text-decoration: none;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: left;
+  color: #000000;
 }
 
 .name {
@@ -105,6 +90,40 @@ ol, ul {
   width: 60%;
 }
 
+.headline-container {
+  width: 40%;
+  margin: 1.5rem;
+}
+
+.headline h1 {
+  font-family: 'OpenSans', sans-serif;
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.headline h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 0rem;
+}
+
+.headline p {
+  font-family: 'OpenSans', sans-serif;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  background-color: #4c9ed9;
+  padding: 0.5rem 0rem;
+  transition: background-color 0.5s linear, color 750ms ease-in 100ms;
+}
+
+.headline a {
+  color: #fff;
+  }
+
 .main.container {
   display: flex;
   max-width: 100%;
@@ -113,11 +132,223 @@ ol, ul {
   background-color: #fff;
 }
 
+.main-info {
+  max-width: 60%;
+  margin: auto;
+  padding: 0rem 1.5rem;
+}
 
+.main-info img {
+  width: 100%;
+  margin: auto;
+}
+
+.main-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.main-info p {
+  width: 100%;
+  margin: auto;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+.info-container {
+  width: 40%;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.desktop {
+  width: 35%;
+}
+
+.desktop img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.info-text {
+  width: 65%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.info-text h2 {
+  width: 100%;
+  margin: auto;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.info-text p, a {
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem 0rem;
+}
+
+.main {
+  width: 100%;
+  padding: 2rem 0rem;
+  background-color: #a9bacb;
+}
+
+.main .course.container {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.course.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 3.5rem;
+}
+
+.courses {
+  max-width: 28%;
+  margin: 1rem 1rem;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.courses img {
+  width: 100%;
+  margin: auto;
+}
+
+.courses h2 {
+  width: 100%;
+  margin: auto;
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+
+.courses .title {
+  width: 100%;
+  margin: auto;
+  font-weight: 300;
+}
+
+.courses p {
+  width: 100%;
+  margin: auto;
+  font-weight: 300;
+  padding-top: 0.76rem;
+}
+
+.thesis.container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.thesis-content {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.thesis-info {
+  max-width: 60%;
+  margin: auto;
+  padding: 0rem 1.5rem;
+}
+
+.thesis-info video {
+  width: 100%;
+  margin: auto;
+}
+
+.thesis-info h2 {
+  padding: 0.75rem 0rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.exhibit-container {
+  width: 40%;
+}
+
+.exhibit-content {
+  width: 100%;
+  margin:auto;
+  padding: 1rem;
+  background-color: #a9bacb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exhibit-content img {
+  width: 35%;
+  height: auto;
+  margin: auto;
+  padding: 1.5rem 2rem;
+}
+
+.exhibit-info {
+  width: 65%;
+  margin: auto;
+}
+
+.exhibit-info h2 {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.exhibit-info p {
+  width: 100%;
+  padding: 0rem 0.5rem;
+  text-align: left;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-top: 2px solid #4c9ed9;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.copyright p {
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
 
 
 @media only screen and (min-width: 1024px) {
   header .mobile {
+    display: none;
+  }
+}
+
+@media only screen (min-width: 768px), (max-width: 1024px) and (orientation: landscape) {
+  .course-tabs {
     display: none;
   }
 }
