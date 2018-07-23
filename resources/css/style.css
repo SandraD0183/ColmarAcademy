@@ -128,24 +128,23 @@ ol, ul {
   display: flex;
   max-width: 100%;
   margin: auto;
-  padding: 2rem 0rem;
-  background-color: #fff;
+  background-color: #f5f7fa;
 }
 
 .main-info {
-  max-width: 60%;
-  margin: auto;
-  padding: 0rem 1.5rem;
+  width: 60%;
+  margin: 2rem;
 }
 
 .main-info img {
-  width: 100%;
+  max-width: 100%;
   margin: auto;
 }
 
 .main-info h1 {
+  font-family: 'OpenSans', sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   padding-top: 2rem;
 }
 
@@ -154,45 +153,63 @@ ol, ul {
   margin: auto;
   font-weight: 300;
   padding-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .info-container {
-  width: 40%;
+  max-width: 40%;
+  display: block;
 }
 
 .info-content {
-  display: flex;
-  align-items: center;
   padding: 1rem;
+  display: flex;
+  align-items: flex-start;
 }
 
-.desktop {
-  width: 35%;
+.info-content .desktop {
+  max-width: 35%;
 }
 
 .desktop img {
   width: 100%;
-  height: auto;
   margin: auto;
+}
+
+.info-content .mobile {
+  display: none;
+}
+
+.info-content .info-text {
+  max-width: 65%;
 }
 
 .info-text {
-  width: 65%;
+  max-width: 100%;
   margin: auto;
-  padding: 1rem;
+  align-items: center;
+  padding: 0.25rem 0rem;
 }
 
 .info-text h2 {
-  width: 100%;
   margin: auto;
-  font-weight: 500;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
   font-size: 1.25rem;
 }
 
-.info-text p, a {
+.info-text p {
   width: 100%;
   margin: auto;
   padding: 0.5rem 0rem;
+}
+
+.info-text a {
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem 0rem;
+  color: #0088cc;
 }
 
 .main {
@@ -201,16 +218,17 @@ ol, ul {
   background-color: #a9bacb;
 }
 
-.main .course.container {
+.course.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.course.container h1 {
+  font-family: 'OpenSans', sans-serif;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
   padding-top: 2rem;
-}
-
-.course.container {
-  display: flex;
-  flex-direction: column;
 }
 
 .course-content {
@@ -225,7 +243,6 @@ ol, ul {
 .courses {
   max-width: 28%;
   margin: 1rem 1rem;
-  padding: 0.5rem;
   background-color: #fff;
 }
 
@@ -237,27 +254,43 @@ ol, ul {
 .courses h2 {
   width: 100%;
   margin: auto;
-  padding-top: 0.5rem;
-  font-weight: 500;
+  padding: 0.5rem;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .courses .title {
   width: 100%;
   margin: auto;
-  font-weight: 300;
+  font-family: 'OpenSans', sans-serif;
 }
 
 .courses p {
   width: 100%;
   margin: auto;
   font-weight: 300;
-  padding-top: 0.76rem;
+  line-height: 1.5;
+  padding: 0.5rem;
+}
+
+.course-tabs {
+  display: none;
 }
 
 .thesis.container {
   max-width: 100%;
   margin: auto;
-  background-color: #fff;
+  padding: 2rem 0rem;
+  background-color: #f5f7fa;
+}
+
+.thesis.container h1 {
+  font-family: 'OpenSans', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 2rem;
 }
 
 .thesis-content {
@@ -270,59 +303,67 @@ ol, ul {
 }
 
 .thesis-info {
-  max-width: 60%;
+  width: 60%;
   margin: auto;
-  padding: 0rem 1.5rem;
+  padding: 1.5rem;
 }
 
 .thesis-info video {
-  width: 100%;
+  max-width: 100%;
   margin: auto;
 }
 
 .thesis-info h2 {
-  padding: 0.75rem 0rem;
-  font-size: 1.25rem;
-  font-weight: 500;
+  padding-top: 1rem;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.thesis-info p {
+  width: 100%;
+  margin: auto;
+  font-weight: 300;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .exhibit-container {
-  width: 40%;
+  max-width: 40%;
+  display: block;
 }
 
 .exhibit-content {
-  width: 100%;
-  margin:auto;
   padding: 1rem;
-  background-color: #a9bacb;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  align-items: flex-start;
+  }
 
 .exhibit-content img {
   width: 35%;
-  height: auto;
   margin: auto;
   padding: 1.5rem 2rem;
-}
+  }
 
 .exhibit-info {
   width: 65%;
   margin: auto;
+  align-items: center;
+  padding: 0.25rem 0rem;
 }
 
 .exhibit-info h2 {
   padding: 0.5rem;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
   font-size: 1.25rem;
-  font-weight: 500;
-}
+  }
 
 .exhibit-info p {
   width: 100%;
-  padding: 0rem 0.5rem;
-  text-align: left;
-}
+  padding: 0.5rem;
+  }
 
 footer .container {
   display: flex;
@@ -331,7 +372,7 @@ footer .container {
   background-color: #fff;
   border-top: 2px solid #4c9ed9;
   padding: 1rem;
-  margin: 1rem;
+  margin: auto;
 }
 
 .copyright p {
