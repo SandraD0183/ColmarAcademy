@@ -20,6 +20,10 @@ header .container {
   background-color: #fff;
 }
 
+header .mobile {
+  display: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -224,6 +228,7 @@ ol, ul {
   margin: auto;
   padding: 0.5rem 0rem;
   color: #0088cc;
+  font-weight: bold;
 }
 
 .info-text a:hover {
@@ -405,15 +410,68 @@ footer .container {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 800px) {
+  header {
+    margin: 0 auto;
+  }
 
-@media only screen and (min-width: 1024px) {
+  header .container {
+    justify-content: center;
+  }
+
+  header .name {
+    display: none;
+  }
+
+  .nav-content li {
+    display: none;
+  }
+
   header .mobile {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 2rem;
   }
-}
 
-@media only screen (min-width: 768px), (max-width: 1024px) and (orientation: landscape) {
-  .course-tabs {
-    display: none;
+  header .mobile img {
+    vertical-align: bottom;
   }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .banner img {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .headline-container {
+    width: 100%;
+  }
+
+  .headline h1 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin: 1rem;
+  }
+
+  .headline h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 1rem;
+  }
+
+  .headline p {
+    margin: 1rem;
+  }
+
+
 }
