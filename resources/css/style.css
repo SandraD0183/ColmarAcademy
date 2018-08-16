@@ -27,6 +27,8 @@ header .mobile {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin: auto;
   padding-left: 1.5rem;
 }
 
@@ -411,12 +413,10 @@ footer .container {
 }
 
 @media only screen and (max-width: 800px) {
-  header {
-    margin: 0 auto;
-  }
-
   header .container {
+    display: block;
     justify-content: center;
+    max-width: 100%;
   }
 
   header .name {
@@ -427,17 +427,20 @@ footer .container {
     display: none;
   }
 
-  header .mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    height: 2rem;
+  .logo {
+    display: block;
+    justify-content: center;
+    max-wdith: 10%;
   }
 
-  header .mobile img {
-    vertical-align: bottom;
+  header .mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 0rem;
+    padding: .5rem;
+    max-width: 90%;
   }
 
   .banner {
@@ -473,5 +476,117 @@ footer .container {
     margin: 1rem;
   }
 
+  .main-info {
+    display: none;
+  }
+
+  .info-container {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .desktop img {
+    display: none;
+  }
+
+  .info-content .mobile {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-content .mobile img {
+    max-width: 100%;
+  }
+
+  .info-content .info-text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .course.container {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .course-content {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  .course.container h1 {
+    font-size: 2.2rem;
+  }
+
+  .courses img {
+    display: none;
+  }
+
+  .courses h2 {
+    display: none;
+  }
+
+  .courses .title {
+    display: none;
+  }
+
+  .courses p {
+    display: none;
+  }
+
+  .course-tabs {
+    width: 85%;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .course-tabs h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .thesis.container h1 {
+    font-size: 2.2rem;
+    padding: 0rem;
+  }
+
+  .thesis-content .thesis-info {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .thesis-info video {
+    width: 100%;
+  }
+
+  .thesis-info h2 {
+    display: none;
+  }
+
+  .thesis-info p {
+    display: none;
+  }
+
+  .exhibit-container {
+    display: none;
+  }
 
 }
